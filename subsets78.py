@@ -5,7 +5,7 @@ class Solution:
 			if l==0:
 				return [[],[nums[0]]]
 			for x in traversallist(l-1):
-				r.append(x+[])
+				r.append(x)
 				pass
 
 			for j in traversallist(l-1):
