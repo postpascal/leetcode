@@ -8,7 +8,7 @@ public class SolutionTest{
 }
 
    public static void main(String[] args){
-      int[] t={2,7,11,15};
+      int[] t={2,7, 11,15};
       Solution rr = new Solution();
 
       printArray(rr.twoSum(t,9));
