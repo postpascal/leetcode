@@ -52,13 +52,19 @@ def circlenode(head):
 def reversnodes(head):
 	p1=None
 	c=head
-	while head.next:
+	while c.next:
 		p2=c.next
 		c.next=p1
 		p1=c
 		c=p2
 	c.next=p1
 	return c
+
+c=reversnodes(buildnodes([1,2,3,4,5,6]))
+while c:
+	print(c.val)
+	c=c.next
+
 
 def mergenodes(h1,h2):
 	if h1.val<h2.val:
@@ -81,12 +87,6 @@ def mergenodes(h1,h2):
 	l.next=h1 or h2
 	return h
 
-
-h=mergenodes(buildnodes([1,3,5,6,8]),buildnodes([0,1,2,5,9]))
-
-while h:
-	print(h.val)
-	h=h.next
 
 
 
